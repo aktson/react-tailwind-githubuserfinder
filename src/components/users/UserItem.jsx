@@ -8,7 +8,7 @@ function UserItem({ user }) {
       </div>
       <div>
         <h3 className="mb-1 text-xl font-semibold ">{user.login}</h3>
-        <Link to={user.html_url} className="text-indigo-300 hover:text-indigo-800">
+        <Link to={`/user/${user.login}`} className="text-indigo-300 hover:text-indigo-800">
           Visit profile
         </Link>
       </div>
